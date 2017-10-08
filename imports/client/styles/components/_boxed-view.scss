@@ -1,0 +1,29 @@
+.boxed-view {
+  align-items: center;
+  background: $boxed-view-overlay-bg;
+  display: flex;
+  justify-content: center;
+  height:100vh; // 100% of viewport height
+  width:100vw; // 100% of viewport width
+}
+
+.boxed-view--modal {
+  background: fade-out($boxed-view-overlay-bg, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.boxed-view__box {
+  background: $boxed-view-bg;
+  paddin: 2.4rem;
+  text-align: center;
+  width: 24rem;
+}
+
+.boxed-view__form {
+  display: flex;
+  flex-direction: column; // 요소들이 컬럼으로 정렬
+}
